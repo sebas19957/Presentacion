@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var links = [{ label: 'TRAILER', hf: './pages/trailer.html' },
-    { label: 'PREGUNTA', hf: './pages/pregunta.html' },
+    { label: 'TEMA PRINCIPAL', hf: './pages/pregunta.html' },
     { label: 'DERECHOS VULNERADOS', hf: './pages/derechos.html' },
     { label: 'CONCLUSIONES', hf: './pages/conclusiones.html' },
     { label: 'BIBLIOGRAFIAS', hf: './pages/bibliografias.html' },];
@@ -43,6 +43,9 @@ $(document).ready(function () {
             link.setAttribute("id", links[i].label);
             if (links[i].label === 'DERECHOS VULNERADOS') {
                 link.setAttribute("id",'DERECHOS');
+            }
+            if (links[i].label === 'TEMA PRINCIPAL') {
+                link.setAttribute("id",'TEMA');
             }
             link.href = links[i].hf;
             link.dataset.color = links[i].bg;
@@ -143,7 +146,7 @@ $(document).ready(function () {
         var trailer = document.getElementById('TRAILER');
         trailer.setAttribute("class",'animate__animated animate__bounceOutRight');
         trailer.style.display = 'none';
-        document.getElementById('PREGUNTA').style.display = 'none';
+        document.getElementById('TEMA').style.display = 'none';
         document.getElementById('DERECHOS').style.display = 'none';
         document.getElementById('CONCLUSIONES').style.display = 'none';
         document.getElementById('BIBLIOGRAFIAS').style.display = 'none';
@@ -152,7 +155,7 @@ $(document).ready(function () {
 
     function aparecerInicio() {
         document.getElementById('TRAILER').style.display = 'block';
-        document.getElementById('PREGUNTA').style.display = 'block';
+        document.getElementById('TEMA').style.display = 'block';
         document.getElementById('DERECHOS').style.display = 'block';
         document.getElementById('CONCLUSIONES').style.display = 'block';
         document.getElementById('BIBLIOGRAFIAS').style.display = 'block';
