@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel='stylesheet' type='text/css' media='screen' href='../CSS/conclusiones.css'>
+<script src='../JS/trailer.js'></script>
+
+<header class="header conntent">
+    <div class="header-video">
+        <video src="../video/video-pelicual-02.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="header-overlay">
+        <div id="content_conclusiones">
+            <div class="divContentT">
+                <h1 class="animate__animated animate__fadeInDown">CONCLUSIONES</h1>
+                <div class="animate__animated animate__fadeInDown" >
+                    <p style="text-align: justify;">
+                        Para concluir, la película es un ejemplo de vulneración de muchos de los derechos que hoy conocemos como fundamentales y que hoy por hoy seguimos viendo como la religión sigue dominando el poder económico y la justicia, en la antigüedad como se veía en la película era más la rivalidad entre las religiones haciendo que entre las personas se creara un odio y una sed de venganza donde tenían que pagar con alguna parte cuerpo humano aquellas deudas o intereses y llevaba a sentir una satisfacción por la tortura que le estaban generando a la persona, debido a esto se fueron creando normas que no permitían que el cuerpo hiciera parte de un bien que se pudiera cobrar pero aun así la comercialización del cuerpo humano se sigue realizando de una u otra manera en la venta de órganos, en la prostitución, en la trata de personas entre otras formas.
+                        Además, vemos como la discriminación y lo derechos de las mujeres que tenemos hoy en día son vulnerados ya que en el tiempo de la película ellas no podían elegir, siempre tenían que estar sometidas y sumisas a las decisiones del hombre. 
+                    </p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="float" id="menu-share">
+                    <i class="fa fa-share my-float"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href="../pages/bibliografias.html"><i class="fa fa-arrow-right my-float"></i></a>
+                    </li>
+                    <li>
+                        <a href="../pages/derechos.html"><i class="fa fa-arrow-left my-float"></i></a>
+                    </li>
+                    <li><a href="../index.html"><i class="fa fa-home my-float"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-content">
+
+    </div>
+</header>
+
+<script>
+    function imagenesFondo() {
+        let aleatorio = Math.floor(Math.random() * 9);
+        document.getElementById("image").src = "../images/" + aleatorio + ".jpg";
+
+        //elemento.innerHTML="<img src=\""+aleatorio+".png\"></img>"
+    }
+    setInterval("imagenesFondo()", 4000);
+
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+
+    $('.fixed-action-btn').floatingActionButton();
+</script>
+

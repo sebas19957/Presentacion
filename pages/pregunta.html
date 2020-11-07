@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel='stylesheet' type='text/css' media='screen' href='../CSS/pregunta.css'>
+<script src='../JS/trailer.js'></script>
+
+<header class="header conntent">
+    <div class="header-video">
+        <video src="../video/video-pelicual-02.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="header-overlay">
+        <div id="content_pregunta">
+            <div class="divContentT">
+                <h1 class="animate__animated animate__fadeInDown">¿EL CUERPO HUMANO HACE PARTE DEL COMERCIO?</h1>
+                <p class="animate__animated animate__fadeInDown" style="color: white;"> 
+                    En el código civil colombiano ART  1502, 1519, 1521. 
+                    El cuerpo humano viviente debe entenderse como parte inseparable del sujeto de derecho; por tal razón, 
+                    tradicionalmente se ha estimado que no puede ser considerado un bien. En efecto, 
+                    se ha sostenido que el cuerpo humano no puede reducirse a la calificación de cosa y que, por ende, 
+                    está fuera del comercio jurídico. 
+                    En la articulo 17 de la constitución se prohíben la esclavitud, 
+                    la servidumbre y la trata de seres humanos en todas sus formas.
+                </p>
+            </div>
+            <div>
+                <a href="#" class="float" id="menu-share">
+                    <i class="fa fa-share my-float"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href="../pages/derechos.html"><i class="fa fa-arrow-right my-float"></i></a>
+                    </li>
+                    <li>
+                        <a href="../pages/trailer.html"><i class="fa fa-arrow-left my-float"></i></a>
+                    </li>
+                    <li><a href="../index.html"><i class="fa fa-home my-float"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-content">
+
+    </div>
+</header>
+
+<script>
+    function imagenesFondo() {
+        let aleatorio = Math.floor(Math.random() * 9);
+        document.getElementById("image").src = "../images/" + aleatorio + ".jpg";
+
+        //elemento.innerHTML="<img src=\""+aleatorio+".png\"></img>"
+    }
+    setInterval("imagenesFondo()", 4000);
+
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+
+    $('.fixed-action-btn').floatingActionButton();
+</script>
+

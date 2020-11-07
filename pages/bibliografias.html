@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel='stylesheet' type='text/css' media='screen' href='../CSS/bibliografias.css'>
+<script src='../JS/trailer.js'></script>
+
+<header class="header conntent">
+    <div class="header-video">
+        <video src="../video/video-pelicual-02.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="header-overlay">
+        <div id="content_blibliografia">
+            <div class="divContentT">
+                <h1 class="animate__animated animate__fadeInDown">BIBLIOGRAFIAS</h1>
+                <div class="animate__animated animate__fadeInDown" style="text-align: left; margin-left: 5%;">
+                    <p class="efect-b" style="font-size: 20;">
+                        <a style="text-decoration: none; color:white" target="_blank"  href="https://www.colombialegalcorp.com/blog/realmente-colombia-estado-laico/#:~:text=Pero%2C%20despu%C3%A9s%20de%20la%20Constituci%C3%B3n,entre%20todas%20las%20confesiones%20religiosas">
+                          *  Es Realmente Colombia un Estado Laico - www.colombialegalcorp.com
+                        </a>
+                    </p>
+                    <p class="efect-b" style="font-size: 20;">
+                        <a style="text-decoration: none; color:white" target="_blank"  href="https://librepensador.uexternado.edu.co/el-derecho-al-cuerpo-riesgos-del-comercio-de-organos/">
+                          *  El derecho al cuerpo: riesgos del comercio de órganos - librepensador.uexternado.edu.co
+                        </a>
+                    </p>
+                    <p class="efect-b" style="font-size: 20;">
+                        <a style="text-decoration: none; color:white" target="_blank"  href="https://doctrina.vlex.com.co/vid/cuerpo-humano-446661378">
+                          *  Cuerpo humano - doctrina.vlex.com.co
+                        </a>
+                    </p>
+                    <p style="font-size: 20;">
+                        <a  class="efect-b"  style="text-decoration: none; color:white" target="_blank"  href="https://asuntosreligiosos.mininterior.gov.co/sala-de-prensa/opinion/25-anos-de-la-libertad-religiosa-y-de-cultos-en-colombia">
+                          *  25 años de la libertad religiosa y de cultos en Colombia - asuntosreligiosos.mininterior.gov.co
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="float" id="menu-share">
+                    <i class="fa fa-share my-float"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href="../pages/conclusiones.html"><i class="fa fa-arrow-left my-float"></i></a>
+                    </li>
+                    <li><a href="../index.html"><i class="fa fa-home my-float"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="header-content">
+
+    </div>
+</header>
+
+<script>
+    function imagenesFondo() {
+        let aleatorio = Math.floor(Math.random() * 9);
+        document.getElementById("image").src = "../images/" + aleatorio + ".jpg";
+
+        //elemento.innerHTML="<img src=\""+aleatorio+".png\"></img>"
+    }
+    setInterval("imagenesFondo()", 4000);
+</script>
+
